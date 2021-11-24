@@ -19,7 +19,7 @@ method_breach = st.text_input('Enter Method of Breach')
 
 #Predict button
 if st.button('Click to Predict'):
-    model = joblib.load('/users/guembeblessing/desktop/data_breach/security_incident.pkl')
+    model = joblib.load('/streamlit_data_breach/security_incident.pkl')
     
     st.markdown(f'### Prediction is {model.predict([[affected_state, method_breach]])[0]}')
 
