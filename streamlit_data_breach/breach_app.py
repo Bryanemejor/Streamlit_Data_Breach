@@ -26,6 +26,3 @@ if st.button('Predict'):
    updated_res = result.flatten().astype(float)
    st.success('The Probability of getting admission is {}'.format(updated_res))
 
-
-if __name__ =='__main__':
-  main()
