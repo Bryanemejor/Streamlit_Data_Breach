@@ -21,10 +21,10 @@ model = joblib.load('streamlit_data_breach/security_incident.pkl')
 
 inputs = [[affected_state]]
 
-  if st.button('Predict'):
-    result = model.predict(inputs)
-    updated_res = result.flatten().astype(float)
-    st.success('The Probability of getting admission is {}'.format(updated_res))
+if st.button('Predict'):
+   result = model.predict(inputs)
+   updated_res = result.flatten().astype(float)
+   st.success('The Probability of getting admission is {}'.format(updated_res))
 
 
 if __name__ =='__main__':
