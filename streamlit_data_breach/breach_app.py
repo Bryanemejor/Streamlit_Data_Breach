@@ -16,7 +16,7 @@ st.markdown('## Data Breach Incident')
 affected_state = st.text_input('Enter State')
 method_breach = st.text_input('Enter Method of Breach')
 
-model = joblib.load('streamlit_data_breach/security_incident.pkl')
+model = joblib.load('security_incident.pkl')
 #Predict button
 
 inputs = [[affected_state]]
