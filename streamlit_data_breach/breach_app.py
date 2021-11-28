@@ -24,6 +24,6 @@ inputs = [[affected_state]]
 if st.button('Predict'):
    result = model.predict(inputs)
    updated_res = result.flatten().astype(float)
-   st.success('The Probability of getting breached is {}'.format(updated_res))
-   #st.success('The Probability of targeting this city is 100')
+   st.success('The Probability data breach in this city is {}'.format(updated_res))
+
 
